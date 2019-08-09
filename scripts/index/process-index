@@ -1,0 +1,93 @@
+# Load config file
+
+. scripts/config.sh
+
+# index:find-month 
+
+for i in $(seq -f "%02g" 1 12)
+do
+  fname="./temp/$i.md"
+  
+  find . ! -path "*/docs/*" -type f -name "*progress-$i*2019*.md" > $fname
+done
+
+# index:order-index 
+
+
+for i in $(seq -f "%02g" 1 12)
+do
+  fname="./temp/$i.md"
+
+  sortFile $fname
+
+
+done
+
+# index:format-line-index 
+
+for i in $(seq -f "%02g" 1 10)
+do
+
+  case $i in
+    01)
+          month="January"
+          ;;
+    02)
+          month="February"
+          ;;
+    03)
+          month="March"
+          ;;
+    04)
+          month="April"
+          ;;
+    05)
+          month="May"
+          ;;
+    06)
+          month="June"
+          ;;
+    07)
+          month="July"
+          ;;
+    08)
+          month="August"
+          ;;
+    09)
+          month="September"
+          ;;
+    10)
+          month="October"
+          ;;
+    11)
+          month="November"
+          ;;
+    12)
+          month="December"
+          ;;
+    esac
+
+
+
+  fname="./temp/$i.md"
+    x=$(wc -l < "$fname")
+  
+  if [ $x -gt 0 ]
+then
+
+echo '<details><summary>'$month' 2019</summary>\n' | cat - $fname > tmp && mv tmp $fname
+
+# ./progress/progress-01-28-2019.md
+# - [01-28-2019](/progress/progress-01-28-2019.md#readme)
+formatLine $fname '\(\.\/\)\(.*\/\)\(progress\)\(-\)\(.*\)\(\.md\)' '- \[\5\]\(\/\2\3\4\5.md#readme\)'
+
+echo '\n</details>' >> $fname
+fi
+  
+
+done
+
+
+
+# generate-index 
+# index:clean-lists

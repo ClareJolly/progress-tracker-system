@@ -1,0 +1,15 @@
+# .vscode/
+goals.raw
+/docs/
+/node_modules/
+# scripts/
+# READMETEST.md
+# READMETEST-COL.md
+# READMETESTTEST.md
+temp/output-file*
+temp/output-file.md
+*temp/*
+README-list.md
+.DS_Store
+**/~$*
+# PD/~$Goals 2020.pptx

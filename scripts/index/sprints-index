@@ -1,0 +1,40 @@
+# Load config file
+
+. scripts/config.sh
+
+# echo 'test'
+
+fileToUse=temp/sprint-list.md
+
+createFile $fileToUse
+
+echo '' > $fileToUse
+
+# get list of files
+
+search_dir=evidence/sprints
+excludesearch_dir=evidence/sprints/templates
+
+for entry in "$search_dir"/*
+do
+      if [ "$entry" == "$excludesearch_dir" ] ; then
+            continue;
+      fi
+
+      # Format link line
+      findRegex="\(evidence\/sprints\/\)\(.*\)"
+      replaceRegex="\2"
+
+      filenameOnly=$(echo "$entry" | sed -e "s/$findRegex/$replaceRegex/g")
+
+      echo "- [$filenameOnly](/$entry#readme)" >> $fileToUse
+done
+
+# Sort file
+
+sortFile $fileToUse
+
+# Add line breaks
+# sed -i '' -e 's/$/\
+# /g' ${fileToUse}
+

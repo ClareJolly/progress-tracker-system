@@ -1,0 +1,62 @@
+{
+  "name": "progress",
+  "version": "1.0.0",
+  "description": "Private repository for my weekly progress reports and evidence of what I have been working on and learning.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "post": "git add . && git commit -m 'updates' && git push",
+    "\n################### MARKDOWN MAGIC ###################": "",
+    "generate-docs": "node scripts/generate-docs.js",
+    "generate-feedback": "node scripts/generate-feedback.js",
+    "generate-training": "node scripts/generate-training.js",
+    "generate-personal": "node scripts/generate-personal.js",
+    "generate-useful": "node scripts/generate-useful.js",
+    "generate-index": "node scripts/generate-index.js",
+    "generate-sprint-index": "node scripts/generate-sprint-index.js",
+    "generate-goals-group": "node scripts/generate-goals-group.js",
+    "generate-goals-group-bcs": "node scripts/generate-goals-group-bcs.js",
+    "\n################### GETTING INFO ###################": "",
+    "goals:process-goals": "scripty",
+    "feedback:process-feedback": "scripty",
+    "training:process-training": "scripty",
+    "personal:process-personal": "scripty",
+    "useful:process-useful": "scripty",
+    "index:process-index": "scripty",
+    "index:sprints-index": "scripty",
+    "goals-group:process-goals-group": "scripty",
+    "goals-group-bcs:process-goals-group": "scripty",
+    "clean-files":"scripty",
+    "\n################### COMBINED SCRIPTS ###################": "",
+    "get-goals": "npm-run-all -s goals:process-goals generate-docs ",
+    "get-feedback": "npm-run-all -s feedback:process-feedback generate-feedback ",
+    "get-training": "npm-run-all -s training:process-training generate-training ",
+    "get-personal": "npm-run-all -s personal:process-personal generate-personal ",
+    "get-useful": "npm-run-all -s useful:process-useful generate-useful ",
+    "get-index": "npm-run-all -s index:process-index generate-index ",
+    "get-sprint-index": "npm-run-all -s index:sprints-index generate-sprint-index ",
+    "get-goals-group": "npm-run-all -s goals-group:process-goals-group generate-goals-group ",
+    "get-goals-group-bcs": "npm-run-all -s goals-group-bcs:process-goals-group generate-goals-group-bcs ",
+    "\n################### BUILD ###################": "",
+    "updateFiles": "npm-run-all -s get-goals get-feedback get-training get-personal get-sprint-index get-index get-useful get-goals-group get-goals-group-bcs clean-files",
+    "build": "updateFiles post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClareJolly/progress-reports.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClareJolly/progress-reports/issues"
+  },
+  "homepage": "https://github.com/ClareJolly/progress-reports#readme",
+  "devDependencies": {
+    "markdown-magic": "^0.1.25",
+    "markdown-magic-jsdoc": "^1.0.1",
+    "npm-run-all": "^4.1.5",
+    "scripty": "^1.9.0"
+  }
+}

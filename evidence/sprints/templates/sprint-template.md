@@ -1,0 +1,77 @@
+[![back to start](/images/on-page/back.png)](/README.md#readme)
+
+# Mercury - Sprint 13.2 &nbsp;&nbsp; [![previous](/images/on-page/left-arrow.png)](./Mercury-13.1.md#readme)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![next](/images/on-page/right-arrow.png)](./Mercury-13.3.md#readme) <!-- omit in toc -->
+
+<details>
+<summary>Index</summary>
+
+- [**Branches**](#branches)
+- [**Details**](#details)
+- [**Tests**](#tests)
+- [**Pull Requests**](#pull-requests)
+- [**Feedback**](#feedback)
+- [**Completed**](#completed)
+- [**Retrospective notes**](#retrospective-notes)
+- [**Next Sprint**](#next-sprint)
+
+</details>
+
+**Stories**
+
+
+
+**Bugs**
+
+
+
+---
+
+## **Branches**
+
+
+
+---
+
+## **Details**
+
+
+
+---
+
+## **Tests**
+
+
+
+---
+
+## **Pull Requests**
+
+
+
+---
+
+## **Feedback**
+
+
+
+---
+
+## **Completed**
+
+
+
+---
+
+## **Retrospective notes**
+
+✅
+
+❌
+
+❓
+
+---
+
+## **Next Sprint**
+
+

@@ -1,0 +1,97 @@
+{
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "markdown": "markdown"
+  },
+  "workbench.colorCustomizations": {
+    "terminal.background": "#1f0000"
+  },
+  "workbench.colorTheme": "Dracula",
+
+  // "files.associations": {
+  //   "**/scripts/feedback/*.*": "shellscript"
+  // }
+  "files.associations": {
+    "clean-feedback": "shellscript",
+    "process-feedback": "shellscript",
+    "clean-goalMD": "shellscript",
+    "process-goals": "shellscript",
+    "clean-goals-group": "shellscript",
+    "process-goals-group": "shellscript",
+    "clean-lists": "shellscript",
+    "process-index": "shellscript",
+    "clean-personal": "shellscript",
+    "process-personal": "shellscript",
+    "clean-useful": "shellscript",
+    "process-useful": "shellscript",
+    "clean-training": "shellscript",
+    "process-training": "shellscript",
+    "**/scripts/feedback/OLD/*.*": "shellscript",
+    "clean-files":"shellscript",
+    "sprints-index":"shellscript"
+  },
+  "markdownlint.config": {
+    "default": true,
+    "MD033": false,
+    "MD041": false,
+    "MD024": false,
+    "MD036": false,
+    "MD035": false,
+    "MD006": false,
+    "MD004": false,
+    // "MD007": { "indent": 4 },
+    "no-hard-tabs": false
+},
+"cSpell.words": [
+  
+],
+"indentRainbow.colors": [
+  "rgba(16,16,16,0.1)",
+  "rgba(16,16,16,0.2)",
+  "rgba(16,16,16,0.3)",
+  "rgba(16,16,16,0.4)",
+  "rgba(16,16,16,0.5)",
+  "rgba(16,16,16,0.6)",
+  "rgba(16,16,16,0.7)",
+  "rgba(16,16,16,0.8)",
+  "rgba(16,16,16,0.9)",
+  "rgba(16,16,16,1.0)"
+  ],
+  "bracketPairColorizer.consecutivePairColors": [
+    "()",
+    "[]",
+    "{}",
+    [
+      "Gold",
+      "Orchid",
+      "LightSkyBlue"
+    ],
+    "Red"
+  ],
+  "highlight.regexes": {
+    // "(console.log)(\\()(.*)(\\))": [
+    //   // (?!\/\/ )(console.log)(\()(.*)(\))
+    // {
+    //     "overviewRulerColor": "#3d3d5c",
+    //     "backgroundColor": "#3d3d5c",
+    //     "color": "#ffffff",
+    //     // "fontWeight": "bold"
+    // },
+    // {
+    //     "backgroundColor": "#3d3d5c",
+    //     "color": "#a3a3c2"
+    // },{
+    //     // "backgroundColor": "#3d3d5c",
+    //     "color": "#a3a3c2",
+    //     // "fontStyle": "italic",
+    //     "border": "1px solid #a3a3c2"
+    // }
+    // ],
+    "(// )(@\\w+)": [
+    {},
+    {
+        "color": "#4de0ff"
+    }
+    ]
+},
+}

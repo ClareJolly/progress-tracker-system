@@ -1,0 +1,44 @@
+# Load config file
+
+. scripts/config.sh
+
+# Set config
+
+fileToUse=temp/output-file-personal.md
+
+# CREATE FILE
+
+createFile $fileToUse
+
+# personal:find-personal 
+
+findLines $fileToUse ':traffic_light:'
+
+# personal:order-personal 
+
+sortFile $fileToUse
+
+# personal:add-lines 
+
+addSpaces $fileToUse
+
+# personal:format-line
+
+# .//progress/progress-03-25-2019.md:- :traffic_light: this is some text
+# .//progress/progress-03-25-2019.md:- :traffic_light: this is some text
+formatLine $fileToUse '\(\(\.\/\/.*\/\)\(.*\)\(\.md:\W*\)\(.*\)\(<sup>\)\)\(.*\)\(<\/sup>\)\(.*$\)' '\7 \5 `\3`\ [...view\]\(\2\3\.md#readme\)'
+
+# .//progress/progress-03-25-2019.md:- :traffic_light: this is some text
+# .//progress/progress-03-25-2019.md:- :traffic_light: this is some text
+formatLine $fileToUse '\(.*\)\(:.*:\)\(.*\)' '\1\2\3'
+
+# .//progress/progress-03-25-2019.md:- :traffic_light: this is some text
+# :traffic_light:  -  this is some text `progress-03-25-2019` [...view](.//progress/progress-03-25-2019.md#readme)
+formatLine $fileToUse '\(\(\.\/\/.*\/\)\(.*\)\(\.md\)\(:\W*\)\(.*\)\(:traffic_light: \)\(.*\)\)\(.*\)\(.*$\)' '\7 \6 \8 `\3`\ [...view\]\(\2\3\.md#readme\)'
+
+# :traffic_light:  some feedback - ![feedback](../images/some-feedback.png) `progress-04-01-2019` [...view](.//progress/progress-04-01-2019.md#readme)
+# :traffic_light:  some feedback - ![feedback](./images/some-feedback.png) `progress-04-01-2019` [...view](.//progress/progress-04-01-2019.md#readme)
+formatLine $fileToUse '\(.*\)\(!\[.*\]\)\(\(\(\).*\)\(images\)\(.*\)\)' '\1\2\(.\/\5\6\7'
+
+# generate-personal 
+# personal:clean-personal

@@ -1,0 +1,169 @@
+# Load config file
+
+. scripts/config.sh
+
+# CREATE FILE
+
+goals=("01.0" "02.0" "03.0" "04.0" "05.0" "06.0" "07.0" "08.0" "09.0" "10.0" "11.1" "11.2" "11.3" "11.4" "12.0" "13.0" "14.0" "15.0" "16.0" "17.0" "18.0" "19.0" "20.0" "21.0" "22.0" "23.0" "24.0" "25.0" "26.0" "27.0" "28.0")
+
+for i in "${goals[@]}"
+do
+
+fileToUse=temp/goals-group-$i.md
+
+createFile $fileToUse
+
+findLines $fileToUse '<sup>\[SA '$i'.*</sup>'
+
+sortFile $fileToUse
+
+addSpaces $fileToUse
+
+done
+
+
+
+# goals:format-line 
+
+ 
+
+
+for i in "${goals[@]}"
+do
+
+case $i in
+ 
+ "01.0")
+        goalTitle="Logic: writes good quality code with sound syntax, in at least one language"
+        ;;
+"02.0")
+        goalTitle="User interface: can develop effective user interfaces for at least one channel"
+        ;;
+"03.0")
+        goalTitle="Data: can effectively link code to the database/data sets"
+        ;;
+"04.0")
+        goalTitle="Test: can test code and analyse results to correct errors found using either V-model manual testing and/or using unit testing"
+        ;;
+"05.0")
+        goalTitle="Problem solving: can apply structured techniques to problem solving, can debug code and can understand the structure of programmes in order to identify and resolve issues"
+        ;;
+"06.0")
+        goalTitle="Design: can create simple data models and software designs to effectively communicate understanding of the program, following best practices and standards"
+        ;;
+"07.0")
+        goalTitle="Analysis: can understand and create basic analysis artefacts, such as user cases and/or user stories"
+        ;;
+"08.0")
+        goalTitle="Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments"
+        ;;
+"09.0")
+        goalTitle="Development lifecycle: can operate at all stages of the software development lifecycle"
+        ;;
+"10.0")
+        goalTitle="Can apply good practice approaches according to the relevant paradigm (for example object oriented, event driven or procedural)"
+        ;;
+"11.1")
+        goalTitle="Can interpret and follow software designs and functional/technical specifications"
+        ;;
+"11.2")
+        goalTitle="Can interpret and follow company defined ‘coding standards’ or industry good practice for coding"
+        ;;
+"11.3")
+        goalTitle="Can interpret and follow testing frameworks and methodologies"
+        ;;
+"11.4")
+        goalTitle="Can interpret and follow company, team or client approaches to continuous integration, version and source control"
+        ;;
+"12.0")
+        goalTitle="Can respond to the business environment and business issues related to software development"
+        ;;
+"13.0")
+        goalTitle="Can operate effectively in their own business’, their customers’ and the industry’s environments"
+        ;;
+"14.0")
+        goalTitle="Can apply the maths required to be a software developer (e.g. algorithms, logic and data structures)"
+        ;;
+"15.0")
+        goalTitle="Understands and operates at all stages of the software development lifecycle"
+        ;;
+"16.0")
+        goalTitle="Understands the similarities and differences between agile and waterfall software development methodologies"
+        ;;
+"17.0")
+        goalTitle="Understands how teams work effectively to produce software, and contributes appropriately"
+        ;;
+"18.0")
+        goalTitle="Understands and applies software design approaches and patterns and can interpret and implement a given design, compliant with security and maintainability requirements"
+        ;;
+"19.0")
+        goalTitle="Understands and responds to the business environment and business issues related to software development"
+        ;;
+"20.0")
+        goalTitle="Understands and applies the maths required to be a software developer (eg algorithms, logic and data structures)"
+        ;;
+"21.0")
+        goalTitle="Logical and creative thinking skills"
+        ;;
+"22.0")
+        goalTitle="Analytical and problem solving skills"
+        ;;
+"23.0")
+        goalTitle="Ability to work independently and to take responsibility"
+        ;;
+"24.0")
+        goalTitle="Can use own initiative"
+        ;;
+"25.0")
+        goalTitle="A thorough and organised approach"
+        ;;
+"26.0")
+        goalTitle="Ability to work with a range of internal and external people"
+        ;;
+"27.0")
+        goalTitle="Ability to communicate effectively in a variety of situations"
+        ;;
+"28.0")
+        goalTitle="Maintain a productive, professional, and secure working environment"
+        ;;
+
+esac
+
+
+fname="./temp/goals-group-$i.md"
+   x=$(wc -l < "$fname")
+
+  if [ $x -gt 39 ]
+then
+headingTitle=":white_check_mark:"
+elif [ $x -gt 3 ]
+then
+headingTitle=":warning:"
+else
+headingTitle=":x:" 
+fi
+
+echo "<details><summary>$headingTitle $i - $goalTitle</summary>\n\n[💠 **$i**](/goals/self-assess.md#$i)\n\n---\n" | cat - $fname > tmp && mv tmp $fname
+
+# .//progress/progress-02-18-2019.md:  :eight_spoked_asterisk: Regression feedback ![wiki update](../images/wiki-update.png) <sup>[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.</sup>
+# **[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.**   :eight_spoked_asterisk: Regression feedback ![wiki update](../images/wiki-update.png)  `progress-02-18-2019` [...view](.//progress/progress-02-18-2019.md#readme)
+formatLine $fname '\(\(\.\/\/.*\/\)\(.*\)\(\.md:\W*\)\(.*\)\(<sup>\)\)\(\(\[SA '$i'\]\)[^>]*\)\(<\/sup>\)\(.*$\)' '\5 `\3`\ [...view\]\(\2\3\.md#readme\)'
+# formatLine $fname '\(\(\.\/\/.*\/\)\(.*\)\(\.md:\W*\)\(.*\)\(<sup>\)\)\(\(\[SA '$i'\]\)[^>]*\)\(<\/sup>\)\(.*$\)' '**\7** \
+# \5 `\3`\ [...view\]\(\2\3\.md#readme\)'
+
+# **[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.**   :eight_spoked_asterisk: Regression feedback ![wiki update](../images/wiki-update.png)  `progress-02-18-2019` [...view](.//progress/progress-02-18-2019.md#readme)
+# **[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.**   :eight_spoked_asterisk: Regression feedback ![wiki update](/images/wiki-update.png)  `progress-02-18-2019` [...view](.//progress/progress-02-18-2019.md#readme)
+formatLine $fname '\(.*\)\(!\[.*\]\)\(\(\(\).*\)\(images\)\(.*\)\)' '\1\2\(\/\5\6\7'
+
+# **[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.**   :eight_spoked_asterisk: Regression feedback ![wiki update](/images/wiki-update.png)  `progress-02-18-2019` [...view](.//progress/progress-02-18-2019.md#readme)
+# **[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.**   :eight_spoked_asterisk: Regression feedback ![wiki update](/images/wiki-update.png)  `progress-02-18-2019` [...view](/progress/progress-02-18-2019.md#readme)
+formatLine $fname '\(.*\)\(\.\/\/\)\(.*\)' '\1\/\3'
+
+echo "</details>" >> $fname
+
+
+
+done
+
+# generate-docs 
+# goals:clean-goalMD

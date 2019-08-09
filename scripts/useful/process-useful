@@ -1,0 +1,40 @@
+# Load config file
+
+. scripts/config.sh
+
+# Set config
+
+fileToUse=temp/output-file-useful.md
+
+# CREATE FILE
+
+createFile $fileToUse
+
+# useful:find-useful 
+
+findLines $fileToUse ':bangbang:'
+
+# useful:order-useful 
+
+sortFile $fileToUse
+
+# useful:add-lines 
+
+addSpaces $fileToUse
+
+# useful:format-line
+
+# .//progress/progress-03-11-2019.md:- :bangbang: Some useful info <sup>[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.</sup> <sub>ON Training</sub>
+# .//progress/progress-03-11-2019.md:- :bangbang: Some useful info <sup>[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.</sup> <sub>ON Training</sub>
+formatLine $fileToUse '\(.*\)\(:.*:\)\(.*\)' '\1\2\3'
+
+# .//progress/progress-03-11-2019.md:- :bangbang: Some useful info <sup>[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.</sup> <sub>ON Training</sub>
+# :bangbang:  -  Some useful info <sup>[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.</sup> <sub>ON Training</sub> `progress-03-11-2019` [...view](.//progress/progress-03-11-2019.md#readme)
+formatLine $fileToUse '\(\(\.\/\/.*\/\)\(.*\)\(\.md\)\(:\W*\)\(.*\)\(:bangbang: \)\(.*\)\)\(.*\)\(.*$\)' '\7 \6 \8 `\3`\ [...view\]\(\2\3\.md#readme\)'
+
+# :bangbang:  some feedback - ![feedback](../images/some-feedback.png) `progress-04-01-2019` [...view](.//progress/progress-04-01-2019.md#readme)
+# :bangbang:  some feedback - ![feedback](./images/some-feedback.png) `progress-04-01-2019` [...view](.//progress/progress-04-01-2019.md#readme)
+formatLine $fileToUse '\(.*\)\(!\[.*\]\)\(\(\(\).*\)\(images\)\(.*\)\)' '\1\2\(.\/\5\6\7'
+
+# generate-useful 
+# useful:clean-useful

@@ -1,0 +1,15 @@
+# Load config file
+
+. scripts/config.sh
+
+# Clean Files
+
+cleanFile feedback.md
+cleanFile useful.md
+cleanFile personal.md
+cleanFile training.md
+cleanFile README.md
+cleanFile goals/goals-progress.md
+cleanFile goals/goals-progress-group.md
+cleanFile goals/goals-progress-group-bcs.md
+cleanFile sprints.md

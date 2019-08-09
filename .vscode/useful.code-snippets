@@ -1,0 +1,865 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "mddetails": {
+    "prefix": "mddetails",
+    "body": ["<details>", "<summary>$1</summary>","", "$2", "","</details>",""],
+    "description": "md-details"
+  },
+"Red – I barely know what this is":{
+  "scope":"",
+  "prefix":"Red – I barely know what this is",
+  "body":["<sub>Red – 🔴I barely know what this is.</sub>"],
+  "description": "Red – I barely know what this is."
+},
+"Amber – I struggle to do this":{
+  "scope":"",
+  "prefix":"Amber – I struggle to do this",
+  "body":["<sub>Amber – 🔶 I struggle to do this.</sub>"],
+  "description": "Amber – I struggle to do this."
+},
+"Green – I can do this":{
+  "scope":"",
+  "prefix":"Green – I can do this",
+  "body":["<sub>Green – I can do this.</sub>"],
+  "description": "Green – 💚 I can do this."
+},
+"Supergreen – I'm great at this":{
+  "scope":"",
+  "prefix":"Supergreen – I'm great at this",
+  "body":["<sub>Supergreen 💠💚 – I'm great at this.</sub>"],
+  "description": "Supergreen – I'm great at this."
+},
+
+  "JUNIOR - Working knowledge of HTML and CSS": {
+    "scope": "",
+    "prefix": "JUNIOR - Working knowledge of HTML and CSS",
+    "body": [
+        "<sup>JUNIOR - Working knowledge of HTML and CSS [...check](/goals/dev-roadmap.md#j1)</sup>"
+        ],
+        "description": "JUNIOR - Working knowledge of HTML and CSS"
+        },
+"JUNIOR - JS using both vanilla and frameworks": {
+    "scope": "",
+    "prefix": "JUNIOR - JS using both vanilla and frameworks",
+    "body": [
+        "<sup>JUNIOR - JS using both vanilla and frameworks [...check](/goals/dev-roadmap.md#j2)</sup>"
+        ],
+        "description": "JUNIOR - JS using both vanilla and frameworks"
+        },
+"JUNIOR - Commitment to user-centred design, web standards, usability, and accessibility": {
+    "scope": "",
+    "prefix": "JUNIOR - Commitment to user-centred design, web standards, usability, and accessibility",
+    "body": [
+        "<sup>JUNIOR - Commitment to user-centred design, web standards, usability, and accessibility [...check](/goals/dev-roadmap.md#j3)</sup>"
+        ],
+        "description": "JUNIOR - Commitment to user-centred design, web standards, usability, and accessibility"
+        },
+"JUNIOR - Knowledge of responsive web design": {
+    "scope": "",
+    "prefix": "JUNIOR - Knowledge of responsive web design",
+    "body": [
+        "<sup>JUNIOR - Knowledge of responsive web design [...check](/goals/dev-roadmap.md#j4)</sup>"
+        ],
+        "description": "JUNIOR - Knowledge of responsive web design"
+        },
+"MID - Solid working knowledge of JS and its core principles": {
+    "scope":"",
+    "prefix": "MID - Solid working knowledge of JS and its core principles",
+    "body": [
+        "<sup>MID - Solid working knowledge of JS and its core principles [...check](/goals/dev-roadmap.md#m1)</sup>"
+        ],
+        "description": "MID - Solid working knowledge of JS and its core principles"
+        },
+"MID - Expert level HTML and CSS": {
+    "scope":"",
+    "prefix": "MID - Expert level HTML and CSS",
+    "body": [
+        "<sup>MID - Expert level HTML and CSS [...check](/goals/dev-roadmap.md#m2)</sup>"
+        ],
+        "description": "MID - Expert level HTML and CSS"
+        },
+"MID - Proficiency with Git and other source control systems": {
+    "scope":"",
+    "prefix": "MID - Proficiency with Git and other source control systems",
+    "body": [
+        "<sup>MID - Proficiency with Git and other source control systems [...check](/goals/dev-roadmap.md#m3)</sup>"
+        ],
+        "description": "MID - Proficiency with Git and other source control systems"
+        },
+"MID - Working knowledge of build tools": {
+    "scope":"",
+    "prefix": "MID - Working knowledge of build tools",
+    "body": [
+        "<sup>MID - Working knowledge of build tools [...check](/goals/dev-roadmap.md#m4)</sup>"
+        ],
+        "description": "MID - Working knowledge of build tools"
+        },
+"MID - Work with APIs and JSON structures": {
+    "scope":"",
+    "prefix": "MID - Work with APIs and JSON structures",
+    "body": [
+        "<sup>MID - Work with APIs and JSON structures [...check](/goals/dev-roadmap.md#m5)</sup>"
+        ],
+        "description": "MID - Work with APIs and JSON structures"
+        },
+"MID - Awareness of atomic design and its principles": {
+    "scope":"",
+    "prefix": "MID - Awareness of atomic design and its principles",
+    "body": [
+        "<sup>MID - Awareness of atomic design and its principles [...check](/goals/dev-roadmap.md#m6)</sup>"
+        ],
+        "description": "MID - Awareness of atomic design and its principles"
+        },
+"MID - Commercial responsive web development experience": {
+    "scope":"",
+    "prefix": "MID - Commercial responsive web development experience",
+    "body": [
+        "<sup>MID - Commercial responsive web development experience [...check](/goals/dev-roadmap.md#m7)</sup>"
+        ],
+        "description": "MID - Commercial responsive web development experience"
+        },
+"MID - Working knowledge of agile practices": {
+    "scope":"",
+    "prefix": "MID - Working knowledge of agile practices",
+    "body": [
+        "<sup>MID - Working knowledge of agile practices [...check](/goals/dev-roadmap.md#m8)</sup>"
+        ],
+        "description": "MID - Working knowledge of agile practices"
+        },
+"MID - Adept at debugging code using developer tools": {
+    "scope":"",
+    "prefix": "MID - Adept at debugging code using developer tools",
+    "body": [
+        "<sup>MID - Adept at debugging code using developer tools [...check](/goals/dev-roadmap.md#m9)</sup>"
+        ],
+        "description": "MID - Adept at debugging code using developer tools"
+        },
+"SENIOR - Work closely with the PO in working through features and designs": {
+    "scope":"",
+    "prefix": "SENIOR - Work closely with the PO in working through features and designs",
+    "body": [
+        "<sup>SENIOR - Work closely with the PO in working through features and designs [...check](/goals/dev-roadmap.md#s1)</sup>"
+        ],
+        "description": "SENIOR - Work closely with the PO in working through features and designs"
+        },
+"SENIOR - Commercial experience with architectural designs and solutions": {
+    "scope":"",
+    "prefix": "SENIOR - Commercial experience with architectural designs and solutions",
+    "body": [
+        "<sup>SENIOR - Commercial experience with architectural designs and solutions [...check](/goals/dev-roadmap.md#s2)</sup>"
+        ],
+        "description": "SENIOR - Commercial experience with architectural designs and solutions"
+        },
+"SENIOR - High level of concern for web performance": {
+    "scope":"",
+    "prefix": "SENIOR - High level of concern for web performance",
+    "body": [
+        "<sup>SENIOR - High level of concern for web performance [...check](/goals/dev-roadmap.md#s3)</sup>"
+        ],
+        "description": "SENIOR - High level of concern for web performance"
+        },
+"SENIOR - Identify areas of improvement": {
+    "scope":"",
+    "prefix": "SENIOR - Identify areas of improvement",
+    "body": [
+        "<sup>SENIOR - Identify areas of improvement [...check](/goals/dev-roadmap.md#s4)</sup>"
+        ],
+        "description": "SENIOR - Identify areas of improvement"
+        },
+"SENIOR - Evangelising quality and automation initiatives": {
+    "scope":"",
+    "prefix": "SENIOR - Evangelising quality and automation initiatives",
+    "body": [
+        "<sup>SENIOR - Evangelising quality and automation initiatives [...check](/goals/dev-roadmap.md#s5)</sup>"
+        ],
+        "description": "SENIOR - Evangelising quality and automation initiatives"
+        },
+"SENIOR - Continuously improve the quality and breadth of testing": {
+    "scope":"",
+    "prefix": "SENIOR - Continuously improve the quality and breadth of testing",
+    "body": [
+        "<sup>SENIOR - Continuously improve the quality and breadth of testing [...check](/goals/dev-roadmap.md#s6)</sup>"
+        ],
+        "description": "SENIOR - Continuously improve the quality and breadth of testing"
+        },
+"SENIOR - Leader in SAFe": {
+    "scope":"",
+    "prefix": "SENIOR - Leader in SAFe",
+    "body": [
+        "<sup>SENIOR - Leader in SAFe [...check](/goals/dev-roadmap.md#s7)</sup>"
+        ],
+        "description": "SENIOR - Leader in SAFe"
+        },
+"SENIOR - Leader in Agile": {
+    "scope":"",
+    "prefix": "SENIOR - Leader in Agile",
+    "body": [
+        "<sup>SENIOR - Leader in Agile [...check](/goals/dev-roadmap.md#s8)</sup>"
+        ],
+        "description": "SENIOR - Leader in Agile"
+        },
+"SENIOR - Help drive team performance through coaching, mentoring and teaching": {
+    "scope":"",
+    "prefix": "SENIOR - Help drive team performance through coaching, mentoring and teaching",
+    "body": [
+        "<sup>SENIOR - Help drive team performance through coaching, mentoring and teaching [...check](/goals/dev-roadmap.md#s9)</sup>"
+        ],
+        "description": "SENIOR - Help drive team performance through coaching, mentoring and teaching"
+        },
+"SENIOR - Ability to present technical delivery solutions to key 'non-technical' stakeholders": {
+    "scope": "",
+    "prefix": "SENIOR - Ability to present technical delivery solutions to key 'non-technical' stakeholders",
+    "body": [
+        "<sup>SENIOR - Ability to present technical delivery solutions to key 'non-technical' stakeholders [...check](/goals/dev-roadmap.md#s10)</sup>"
+        ],
+        "description": "SENIOR - Ability to present technical delivery solutions to key 'non-technical' stakeholders"
+        },
+"SENIOR - Commitment to user-centred design, web standards, usability, and accessibility": {
+    "scope": "",
+    "prefix": "SENIOR - Commitment to user-centred design, web standards, usability, and accessibility",
+    "body": [
+        "<sup>SENIOR - Commitment to user-centred design, web standards, usability, and accessibility [...check](/goals/dev-roadmap.md#s11)</sup>"
+        ],
+        "description": "SENIOR - Commitment to user-centred design, web standards, usability, and accessibility"
+        },
+  "Training:On The Job": {
+    "scope": "",
+    "prefix": "Training:On The Job",
+    "body": [
+      "<sub>ON Training</sub>"
+    ],
+    "description": "Training:On The Job"
+  },
+  "Training:Off The Job": {
+    "scope": "",
+    "prefix": "Training:Off The Job",
+    "body": [
+      "<sub>OFF Training</sub>"
+      // "$2"
+      // "${1|one,two,three|}"
+    ],
+    // "choice": ,
+    "description": "Training:Off The Job"
+  },
+  "Training:Other": {
+    "scope": "",
+    "prefix": "Training:Other",
+    "body": [
+      "<sub>OTHER Training</sub>"
+      // "$2"
+      // "${1|one,two,three|}"
+    ],
+    // "choice": ,
+    "description": "Training:Other"
+  },
+  "useful": {
+    "scope": "",
+    "prefix": "useful",
+    "body": [":bangbang: "],
+    // "choice": ,
+    "description": "Mark as useful"
+  },
+  "Feedback": {
+    "scope": "",
+    "prefix": "feedback",
+    "body": [":eight_spoked_asterisk: "],
+    // "choice": ,
+    "description": "Log feedback"
+  },
+  "Personal": {
+    "scope": "",
+    "prefix": "personal",
+    "body": [":traffic_light: "],
+    // "choice": ,
+    "description": "Log personal development"
+  },
+  "Progress": {
+    "scope": "",
+    "prefix": "progress",
+    "body": ["${1|Not Yet,Progressing,I can|}"],
+    // "choice": ,
+    "description": "Progress"
+  },
+  // "Goal1": {
+  //   "scope": "",
+  //   "prefix": "goal1 - MAIN - I write good code",
+  //   "body": [
+  //     "<sup>[1. I write good code](/goals/goals-summary.md#1)</sup>"
+  //     // "$2"
+  //     // "${1|one,two,three|}"
+  //   ],
+  //   // "choice": ,
+  //   "description": "Goal 1"
+  // },
+  // "Goal2": {
+  //   "scope": "",
+  //   "prefix": "goal2 - MAIN - I can build web applications",
+  //   "body": [
+  //     "<sup>[2. I can build web applications](/goals/goals-summary.md#2)</sup>"
+  //     // "${1:foo}"
+  //     // "$2"
+  //   ],
+  //   "description": "Goal 2"
+  // },
+  // "Goal3": {
+  //   "scope": "",
+  //   "prefix": "goal3 - MAIN - I make good products",
+  //   "body": [
+  //     "<sup>[3. I make good products](/goals/goals-summary.md#3)</sup>"
+  //     // "$2"
+  //   ],
+  //   "description": "Goal 3"
+  // },
+  // "Goal4": {
+  //   "scope": "",
+  //   "prefix": "goal4 - MAIN - I have good processes",
+  //   "body": [
+  //     "<sup>[4. I have good processes](/goals/goals-summary.md#4)</sup>"
+  //     // "$2"
+  //   ],
+  //   "description": "Goal 4"
+  // },
+  // "Goal1.1": {
+  //   "scope": "",
+  //   "prefix": "goal1.1 - I can write standards-compliant, clean object-oriented code",
+  //   "body": [
+  //     "<sup>[1.1 I can write standards-compliant, clean object-oriented code](/goals/goals-summary.md#1.1)</sup>"
+  //   ],
+  //   "description": "Goal 1.1"
+  // },
+  // "Goal1.2": {
+  //   "scope": "",
+  //   "prefix": "goal1.2 - I can use data structures and common algorithms",
+  //   "body": [
+  //     "<sup>[1.2 I can use data structures and common algorithms](/goals/goals-summary.md#1.2)</sup>"
+  //   ],
+  //   "description": "Goal 1.2"
+  // },
+  // "Goal1.3": {
+  //   "scope": "",
+  //   "prefix": "goal1.3 - I can design a system",
+  //   "body": ["<sup>[1.3 I can design a system](/goals/goals-summary.md#1.3)</sup>"],
+  //   "description": "Goal 1.3"
+  // },
+  // "Goal2.1": {
+  //   "scope": "",
+  //   "prefix": "goal2.1 - I can integrate with a database",
+  //   "body": [
+  //     "<sup>[2.1 I can integrate with a database](/goals/goals-summary.md#2.1)</sup>"
+  //   ],
+  //   "description": "Goal 2.1"
+  // },
+  // "Goal2.2": {
+  //   "scope": "",
+  //   "prefix": "goal2.2 - I can deploy web applications",
+  //   "body": [
+  //     "<sup>[2.2 I can deploy web applications](/goals/goals-summary.md#2.2)</sup>"
+  //   ],
+  //   "description": "Goal 2.2"
+  // },
+  // "Goal3.1": {
+  //   "scope": "",
+  //   "prefix": "goal3.1 - I can design and build user interfaces",
+  //   "body": [
+  //     "<sup>[3.1 I can design and build user interfaces](/goals/goals-summary.md#3.1)</sup>"
+  //   ],
+  //   "description": "Goal 3.1"
+  // },
+  // "Goal3.2": {
+  //   "scope": "",
+  //   "prefix": "goal3.2 - I create effective documentation",
+  //   "body": [
+  //     "<sup>[3.2 I create effective documentation](/goals/goals-summary.md#3.2)</sup>"
+  //   ],
+  //   "description": "Goal 3.2"
+  // },
+  // "Goal3.3": {
+  //   "scope": "",
+  //   "prefix": "goal3.3 - I maintain my software",
+  //   "body": ["<sup>[3.3 I maintain my software](/goals/goals-summary.md#3.3)</sup>"],
+  //   "description": "Goal 3.3"
+  // },
+  // "Goal3.4": {
+  //   "scope": "",
+  //   "prefix": "goal3.4 - I help my business succeed",
+  //   "body": [
+  //     "<sup>[3.4 I help my business succeed](/goals/goals-summary.md#3.4)</sup>"
+  //   ],
+  //   "description": "Goal 3.4"
+  // },
+  // "Goal3.5": {
+  //   "scope": "",
+  //   "prefix": "goal3.5 - I can work to a specification",
+  //   "body": [
+  //     "<sup>[3.5 I can work to a specification](/goals/goals-summary.md#3.5)</sup>"
+  //   ],
+  //   "description": "Goal 3.5"
+  // },
+  // "Goal4.1": {
+  //   "scope": "",
+  //   "prefix": "goal4.1 - I test-drive my code",
+  //   "body": ["<sup>[4.1 I test-drive my code](/goals/goals-summary.md#4.1)</sup>"],
+  //   "description": "Goal 4.1"
+  // },
+  // "Goal4.2": {
+  //   "scope": "",
+  //   "prefix": "goal4.2 - I use a methodical approach to solving problems",
+  //   "body": [
+  //     "<sup>[4.2 I use a methodical approach to solving problems](/goals/goals-summary.md#4.2)</sup>"
+  //   ],
+  //   "description": "Goal 4.2"
+  // },
+  // "Goal4.3": {
+  //   "scope": "",
+  //   "prefix": "goal4.3 - I version-control my projects",
+  //   "body": [
+  //     "<sup>[4.3 I version-control my projects](/goals/goals-summary.md#4.3)</sup>"
+  //   ],
+  //   "description": "Goal 4.3"
+  // },
+  // "Goal4.4": {
+  //   "scope": "",
+  //   "prefix": "goal4.4 - My teams succeed",
+  //   "body": ["<sup>[4.4 My teams succeed](/goals/goals-summary.md#4.4)</sup>"],
+  //   "description": "Goal 4.4"
+  // },
+  // "Goal4.5": {
+  //   "scope": "",
+  //   "prefix": "goal4.5 - I use an Agile planning process",
+  //   "body": [
+  //     "<sup>[4.5 I use an Agile planning process](/goals/goals-summary.md#4.5)</sup>"
+  //   ],
+  //   "description": "Goal 4.5"
+  // },
+  // "Goal4.6": {
+  //   "scope": "",
+  //   "prefix": "goal4.6 - I use my own initiative",
+  //   "body": ["<sup>[4.6 I use my own initiative](/goals/goals-summary.md#4.6)</sup>"],
+  //   "description": "Goal 4.6"
+  // },
+  
+  // "progressnavbuttons": {
+  //   "prefix": "progressnavbuttons",
+  //   "body": [
+  //     " &nbsp;&nbsp; [![previous](/images/on-page/left-arrow.png)](./progress-xx-xx-2019.md#readme)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![next](/images/on-page/right-arrow.png)](./progress-xx-xx-2019.md#readme)"
+  //   ],
+  //   "description": "progressnavbuttons"
+  // }
+
+  // ,
+  
+// "SA-GOAL-01.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-01.0 - Logic: writes good quality code with sound syntax, in at least one language.",
+//   "body": [
+//       "<sup>[SA 01.0](/goals/self-assess.md#01.0) - Logic: writes good quality code with sound syntax, in at least one language.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-01.0"
+//   },
+// "SA-GOAL-02.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-02.0 - User interface: can develop effective user interfaces for at least one channel.",
+//   "body": [
+//       "<sup>[SA 02.0](/goals/self-assess.md#02.0) - User interface: can develop effective user interfaces for at least one channel.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-02.0"
+//   },
+// "SA-GOAL-03.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-03.0 - Data: can effectively link code to the database/data sets.",
+//   "body": [
+//       "<sup>[SA 03.0](/goals/self-assess.md#03.0) - Data: can effectively link code to the database/data sets.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-03.0"
+//   },
+// "SA-GOAL-04.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-04.0 - Test: can test code and analyse results to correct errors found using either V-model manual testing and/or using unit testing.",
+//   "body": [
+//       "<sup>[SA 04.0](/goals/self-assess.md#04.0) - Test: can test code and analyse results to correct errors found using either V-model manual testing and/or using unit testing.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-04.0"
+//   },
+// "SA-GOAL-05.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-05.0 - Problem solving: can apply structured techniques to problem solving, can debug code and can understand the structure of programmes in order to identify and resolve issues.",
+//   "body": [
+//       "<sup>[SA 05.0](/goals/self-assess.md#05.0) - Problem solving: can apply structured techniques to problem solving, can debug code and can understand the structure of programmes in order to identify and resolve issues.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-05.0"
+//   },
+// "SA-GOAL-06.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-06.0 - Design: can create simple data models and software designs to effectively communicate understanding of the program, following best practices and standards.",
+//   "body": [
+//       "<sup>[SA 06.0](/goals/self-assess.md#06.0) - Design: can create simple data models and software designs to effectively communicate understanding of the program, following best practices and standards.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-06.0"
+//   },
+// "SA-GOAL-07.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-07.0 - Analysis: can understand and create basic analysis artefacts, such as user cases and/or user stories.",
+//   "body": [
+//       "<sup>[SA 07.0](/goals/self-assess.md#07.0) - Analysis: can understand and create basic analysis artefacts, such as user cases and/or user stories.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-07.0"
+//   },
+// "SA-GOAL-08.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-08.0 - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.",
+//   "body": [
+//       "<sup>[SA 08.0](/goals/self-assess.md#08.0) - Deployment: can understand and utilise skills to build, manage and deploy code into enterprise environments.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-08.0"
+//   },
+// "SA-GOAL-09.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-09.0 - Development lifecycle: can operate at all stages of the software development lifecycle.",
+//   "body": [
+//       "<sup>[SA 09.0](/goals/self-assess.md#09.0) - Development lifecycle: can operate at all stages of the software development lifecycle.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-09.0"
+//   },
+// "SA-GOAL-10.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-10.0 - Can apply good practice approaches according to the relevant paradigm (for example object oriented, event driven or procedural).",
+//   "body": [
+//       "<sup>[SA 10.0](/goals/self-assess.md#10.0) - Can apply good practice approaches according to the relevant paradigm (for example object oriented, event driven or procedural).</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-10.0"
+//   },
+// "SA-GOAL-11.1": {
+//   "scope": "",
+//   "prefix":"SA-goal-11.1 - Can interpret and follow software designs and functional/technical specifications.",
+//   "body": [
+//       "<sup>[SA 11.1](/goals/self-assess.md#11.1) - Can interpret and follow software designs and functional/technical specifications.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-11.1"
+//   },
+// "SA-GOAL-11.2": {
+//   "scope": "",
+//   "prefix":"SA-goal-11.2 - Can interpret and follow company defined ‘coding standards’ or industry good practice for coding.",
+//   "body": [
+//       "<sup>[SA 11.2](/goals/self-assess.md#11.2) - Can interpret and follow company defined ‘coding standards’ or industry good practice for coding.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-11.2"
+//   },
+// "SA-GOAL-11.3": {
+//   "scope": "",
+//   "prefix":"SA-goal-11.3 - Can interpret and follow testing frameworks and methodologies.",
+//   "body": [
+//       "<sup>[SA 11.3](/goals/self-assess.md#11.3) - Can interpret and follow testing frameworks and methodologies.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-11.3"
+//   },
+// "SA-GOAL-11.4": {
+//   "scope": "",
+//   "prefix":"SA-goal-11.4 - Can interpret and follow company, team or client approaches to continuous integration, version and source control.",
+//   "body": [
+//       "<sup>[SA 11.4](/goals/self-assess.md#11.4) - Can interpret and follow company, team or client approaches to continuous integration, version and source control.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-11.4"
+//   },
+// "SA-GOAL-12.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-12.0 - Can respond to the business environment and business issues related to software development.",
+//   "body": [
+//       "<sup>[SA 12.0](/goals/self-assess.md#12.0) - Can respond to the business environment and business issues related to software development.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-12.0"
+//   },
+// "SA-GOAL-13.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-13.0 - Can operate effectively in their own business’, their customers’ and the industry’s environments.",
+//   "body": [
+//       "<sup>[SA 13.0](/goals/self-assess.md#13.0) - Can operate effectively in their own business’, their customers’ and the industry’s environments.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-13.0"
+//   },
+// "SA-GOAL-14.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-14.0 - Can apply the maths required to be a software developer (e.g. algorithms, logic and data structures).",
+//   "body": [
+//       "<sup>[SA 14.0](/goals/self-assess.md#14.0) - Can apply the maths required to be a software developer (e.g. algorithms, logic and data structures).</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-14.0"
+//   },
+// "SA-GOAL-15.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-15.0 - Understands and operates at all stages of the software development lifecycle.",
+//   "body": [
+//       "<sup>[SA 15.0](/goals/self-assess.md#15.0) - Understands and operates at all stages of the software development lifecycle.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-15.0"
+//   },
+// "SA-GOAL-16.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-16.0 - Understands the similarities and differences between agile and waterfall software development methodologies.",
+//   "body": [
+//       "<sup>[SA 16.0](/goals/self-assess.md#16.0) - Understands the similarities and differences between agile and waterfall software development methodologies.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-16.0"
+//   },
+// "SA-GOAL-17.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-17.0 - Understands how teams work effectively to produce software, and contributes appropriately.",
+//   "body": [
+//       "<sup>[SA 17.0](/goals/self-assess.md#17.0) - Understands how teams work effectively to produce software, and contributes appropriately.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-17.0"
+//   },
+// "SA-GOAL-18.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-18.0 - Understands and applies software design approaches and patterns and can interpret and implement a given design, compliant with security and maintainability requirements.",
+//   "body": [
+//       "<sup>[SA 18.0](/goals/self-assess.md#18.0) - Understands and applies software design approaches and patterns and can interpret and implement a given design, compliant with security and maintainability requirements.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-18.0"
+//   },
+// "SA-GOAL-19.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-19.0 - Understands and responds to the business environment and business issues related to software development.",
+//   "body": [
+//       "<sup>[SA 19.0](/goals/self-assess.md#19.0) - Understands and responds to the business environment and business issues related to software development.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-19.0"
+//   },
+// "SA-GOAL-20.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-20.0 - Understands and applies the maths required to be a software developer (eg algorithms, logic and data structures).",
+//   "body": [
+//       "<sup>[SA 20.0](/goals/self-assess.md#20.0) - Understands and applies the maths required to be a software developer (eg algorithms, logic and data structures).</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-20.0"
+//   },
+// "SA-GOAL-21.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-21.0 - Logical and creative thinking skills.",
+//   "body": [
+//       "<sup>[SA 21.0](/goals/self-assess.md#21.0) - Logical and creative thinking skills.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-21.0"
+//   },
+// "SA-GOAL-22.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-22.0 - Analytical and problem solving skills.",
+//   "body": [
+//       "<sup>[SA 22.0](/goals/self-assess.md#22.0) - Analytical and problem solving skills.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-22.0"
+//   },
+// "SA-GOAL-23.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-23.0 - Ability to work independently and to take responsibility.",
+//   "body": [
+//       "<sup>[SA 23.0](/goals/self-assess.md#23.0) - Ability to work independently and to take responsibility.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-23.0"
+//   },
+// "SA-GOAL-24.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-24.0 - Can use own initiative.",
+//   "body": [
+//       "<sup>[SA 24.0](/goals/self-assess.md#24.0) - Can use own initiative.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-24.0"
+//   },
+// "SA-GOAL-25.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-25.0 - A thorough and organised approach.",
+//   "body": [
+//       "<sup>[SA 25.0](/goals/self-assess.md#25.0) - A thorough and organised approach.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-25.0"
+//   },
+// "SA-GOAL-26.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-26.0 - Ability to work with a range of internal and external people.",
+//   "body": [
+//       "<sup>[SA 26.0](/goals/self-assess.md#26.0) - Ability to work with a range of internal and external people.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-26.0"
+//   },
+// "SA-GOAL-27.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-27.0 - Ability to communicate effectively in a variety of situations.",
+//   "body": [
+//       "<sup>[SA 27.0](/goals/self-assess.md#27.0) - Ability to communicate effectively in a variety of situations.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-27.0"
+//   },
+// "SA-GOAL-28.0": {
+//   "scope": "",
+//   "prefix":"SA-goal-28.0 - Maintain a productive, professional, and secure working environment.",
+//   "body": [
+//       "<sup>[SA 28.0](/goals/self-assess.md#28.0) - Maintain a productive, professional, and secure working environment.</sup>"
+  
+//   ],
+//   "description": "SA-GOAL-28.0"
+//   },
+
+  "BCS-GOAL-01":{
+    "scope":"",
+    "prefix":"BCS-goal-01 - Logic - Write good quality code (logic) with sound syntax in at least one language",
+    "body":"<sup>[BCS 01](/goals/BCS-goals.md#01) - Logic</sup>",
+    "description":"BCS-goal-01 - Logic - Write good quality code (logic) with sound syntax in at least one language"
+  },
+  
+  "BCS-GOAL-02":{
+    "scope":"",
+    "prefix":"BCS-goal-02 - User Interface - Can develop effective user interfaces for at least one channel",
+    "body":"<sup>[BCS 02](/goals/BCS-goals.md#02) - User Interface</sup>",
+    "description":"BCS-goal-02 - User Interface - Can develop effective user interfaces for at least one channel"
+  },
+  
+  "BCS-GOAL-03":{
+    "scope":"",
+    "prefix":"BCS-goal-03 - Data - Can effectively link code to the database / data sets",
+  "body":"<sup>[BCS 03](/goals/BCS-goals.md#03) - Data</sup>",
+  "description":"BCS-goal-03 - Data - Can effectively link code to the database / data sets"
+},
+  
+  "BCS-GOAL-04":{
+    "scope":"",
+    "prefix":"BCS-goal-04 - Test - Can test code and analyse results to correct errors found using either V-model manual testing and / or using unit testing",
+    "body":"<sup>[BCS 04](/goals/BCS-goals.md#04) - Test</sup>",
+    "description":"BCS-goal-04 - Test - Can test code and analyse results to correct errors found using either V-model manual testing and / or using unit testing"
+  },
+  
+  "BCS-GOAL-05":{
+    "scope":"",
+    "prefix":"BCS-goal-05 - Problem solving - Can apply structured techniques to problem solving, can debug code and can understand the structure of programs in order to identify and resolve issues",
+    "body":"<sup>[BCS 05](/goals/BCS-goals.md#05) - Problem solving</sup>",
+    "description":"BCS-goal-05 - Problem solving - Can apply structured techniques to problem solving, can debug code and can understand the structure of programs in order to identify and resolve issues"
+  },
+  
+  "BCS-GOAL-06":{
+    "scope":"",
+    "prefix":"BCS-goal-06 - Design - Can create simple data models and software designs to effectively communicate understanding of the program, following best practices and standards",
+    "body":"<sup>[BCS 06](/goals/BCS-goals.md#06) - Design</sup>",
+    "description":"BCS-goal-06 - Design - Can create simple data models and software designs to effectively communicate understanding of the program, following best practices and standards"
+  },
+  
+  "BCS-GOAL-07":{
+    "scope":"",
+    "prefix":"BCS-goal-07 - Analysis - Can understand and create basic analysis artefacts, such as use cases and / or user stories",
+    "body":"<sup>[BCS 07](/goals/BCS-goals.md#07) - Analysis</sup>",
+    "description":"BCS-goal-07 - Analysis - Can understand and create basic analysis artefacts, such as use cases and / or user stories"
+  },
+  
+  "BCS-GOAL-08":{
+    "scope":"",
+    "prefix":"BCS-goal-08 - Deployment - Can understand and utilise skills to build, manage and deploy code into enterprise environments",
+    "body":"<sup>[BCS 08](/goals/BCS-goals.md#08) - Deployment</sup>",
+    "description":"BCS-goal-08 - Deployment - Can understand and utilise skills to build, manage and deploy code into enterprise environments"
+  },
+  
+  "BCS-GOAL-09":{
+    "scope":"",
+    "prefix":"BCS-goal-09 - Development life cycle - Can operate at all stages of the software development lifecycle, with increasing breadth and depth over time, with initial focus on build and test",
+    "body":"<sup>[BCS 09](/goals/BCS-goals.md#09) - Development life cycle</sup>",
+    "description":"BCS-goal-09 - Development life cycle - Can operate at all stages of the software development lifecycle, with increasing breadth and depth over time, with initial focus on build and test"
+  },
+  
+  "BCS-GOAL-10":{
+    "scope":"",
+    "prefix":"BCS-goal-10 - Interpret and Follow - Can apply good practice approaches according to the relevant paradigm (for example object-oriented, event driven or procedural)",
+    "body":"<sup>[BCS 10](/goals/BCS-goals.md#10) - Interpret and Follow</sup>",
+    "description":"BCS-goal-10 - Interpret and Follow - Can apply good practice approaches according to the relevant paradigm (for example object-oriented, event driven or procedural)"
+  },
+  
+  "BCS-GOAL-11":{
+    "scope":"",
+    "prefix":"BCS-goal-11 - Respond to Business Environment",
+      "body":"<sup>[BCS 11](/goals/BCS-goals.md#11) - Respond to Business Environment</sup>",
+      "description":"BCS-goal-11 - Respond to Business Environment"
+    },
+  
+  "BCS-GOAL-12":{
+    "scope":"",
+    "prefix":"BCS-goal-12 - Industry Environment - Can operate effectively in their own business's, their customers' and the industry's environments",
+    "body":"<sup>[BCS 12](/goals/BCS-goals.md#12) - Industry Environment</sup>",
+    "description":"BCS-goal-12 - Industry Environment - Can operate effectively in their own business's, their customers' and the industry's environments"
+  },
+  
+  "BCS-GOAL-13":{
+    "scope":"",
+    "prefix":"BCS-goal-13 - Application of Mathematics - Can apply the maths required to be a software developer (e.g. algorithms, logic and data structures)",
+    "body":"<sup>[BCS 13](/goals/BCS-goals.md#13) - Application of Mathematics</sup>",
+    "description":"BCS-goal-13 - Application of Mathematics - Can apply the maths required to be a software developer (e.g. algorithms, logic and data structures)"
+  },
+  
+  "BCS-GOAL-14":{
+    "scope":"",
+    "prefix":"BCS-goal-14 - Business skills - Demonstrates an analytical and systematic approach to issue resolution. Takes the initiative in identifying and negotiating appropriate personal development opportunities. Demonstrates effective communication skills. Contributes fully to the work of teams. Plans, schedules and monitors own work (and that of others where applicable) competently within limited deadlines and according to relevant legislation, standards and procedures. Appreciates the wider business context, and how their role relates to other roles and to the business of the employer or client.",
+    "body":"<sup>[BCS 14](/goals/BCS-goals.md#14) - Business skills</sup>",
+    "description":"BCS-goal-14 - Business skills - Demonstrates an analytical and systematic approach to issue resolution. Takes the initiative in identifying and negotiating appropriate personal development opportunities. Demonstrates effective communication skills. Contributes fully to the work of teams. Plans, schedules and monitors own work (and that of others where applicable) competently within limited deadlines and according to relevant legislation, standards and procedures. Appreciates the wider business context, and how their role relates to other roles and to the business of the employer or client."
+  },
+  
+  "BCS-GOAL-15":{
+    "scope":"",
+    "prefix":"BCS-goal-15 - Complexity - Performs a range of work, sometimes complex and non-routine, in a variety of environments. Applies a methodical approach to issue definition and resolution. Undertakes all work in accordance with agreed safety, technical and quality standards, using appropriate methods and tools.",
+    "body":"<sup>[BCS 15](/goals/BCS-goals.md#15) - Complexity</sup>",
+    "description":"BCS-goal-15 - Complexity - Performs a range of work, sometimes complex and non-routine, in a variety of environments. Applies a methodical approach to issue definition and resolution. Undertakes all work in accordance with agreed safety, technical and quality standards, using appropriate methods and tools."
+  },
+  
+  "BCS-GOAL-16":{
+    "scope":"",
+    "prefix":"BCS-goal-16 - Autonomy - Works under general direction. Uses discretion in identifying and responding to complex issues and assignments.Usually receives specific instructions and has work reviewed at frequent milestones.Determines when issues should be escalated to a higher level.",
+    "body":"<sup>[BCS 16](/goals/BCS-goals.md#16) - Autonomy</sup>",
+    "description":"BCS-goal-16 - Autonomy - Works under general direction. Uses discretion in identifying and responding to complex issues and assignments.Usually receives specific instructions and has work reviewed at frequent milestones.Determines when issues should be escalated to a higher level."
+  },
+  
+  "BCS-GOAL-17":{
+    "scope":"",
+    "prefix":"BCS-goal-17 - Influence - Interacts with and influences colleagues. Has working level contact with customers, suppliers and partners. May supervise others or make decisions which impact the work assigned to individuals or phases of projects. Makes decisions which influence the success of projects and team objectives.",
+    "body":"<sup>[BCS 17](/goals/BCS-goals.md#17) - Influence</sup>",
+    "description":"BCS-goal-17 - Influence - Interacts with and influences colleagues. Has working level contact with customers, suppliers and partners. May supervise others or make decisions which impact the work assigned to individuals or phases of projects. Makes decisions which influence the success of projects and team objectives."
+  },
+  
+}

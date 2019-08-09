@@ -1,0 +1,48 @@
+# Load config file
+
+. scripts/config.sh
+
+# Set config
+
+fileToUse=temp/output-file-feedback.md
+findRulesToUse=':eight_spoked_asterisk:'
+
+# runAll $fileToUse $findRulesToUse
+
+# CREATE FILE
+
+createFile $fileToUse
+
+# feedback:find-feedback 
+
+findLines $fileToUse ':eight_spoked_asterisk:'
+
+# feedback:order-feedback 
+
+sortFile $fileToUse
+
+# feedback:add-lines 
+
+addSpaces $fileToUse
+
+# feedback:format-line 
+
+# .//progress/progress-04-01-2019.md::eight_spoked_asterisk: 🌀 this is some text
+# .//progress/progress-04-01-2019.md::eight_spoked_asterisk: 🌀 this is some text
+# formatLine $fileToUse '\(\(\.\/\/.*\/\)\(.*\)\(\.md:\W*\)\(.*\)\(<sup>\)\)\(.*\)\(<\/sup>\)\(.*$\)' '\7 \5 `\3`\ [...view\]\(\2\3\.md#readme\)'
+
+# .//progress/progress-04-01-2019.md::eight_spoked_asterisk: 🌀 this is some text
+# .//progress/progress-04-01-2019.md::eight_spoked_asterisk: 🌀 this is some text
+formatLine $fileToUse '\(.*\)\(:  :\)\(.*\)' '\1::\3'
+formatLine $fileToUse '\(.*\)\(:      :\)\(.*\)' '\1::\3'
+
+# .//progress/progress-04-01-2019.md::eight_spoked_asterisk: 🌀 this is some text
+# :eight_spoked_asterisk:  🌀 this is some text `progress-04-01-2019` [...view](.//progress/progress-04-01-2019.md#readme)
+formatLine $fileToUse '\(\(\.\/\/.*\/\)\(.*\)\(\.md\)\(:\W*\)\(:eight_spoked_asterisk: \)\(.*\)\)\(.*\)\(.*$\)' '\6 \7 `\3`\ [...view\]\(\2\3\.md#readme\)'
+
+# :eight_spoked_asterisk:  Some feedback - ![feedback](../images/some-feedback.png) `progress-04-01-2019` [...view](.//progress/progress-04-01-2019.md#readme)
+# :eight_spoked_asterisk:  Some feedback - ![feedback](./images/some-feedback.png) `progress-04-01-2019` [...view](.//progress/progress-04-01-2019.md#readme)
+formatLine $fileToUse '\(.*\)\(!\[.*\]\)\(\(\(\).*\)\(images\)\(.*\)\)' '\1\2\(.\/\5\6\7'
+
+# generate-feedback 
+# feedback:clean-feedback
