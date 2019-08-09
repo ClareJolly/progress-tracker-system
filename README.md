@@ -2,6 +2,7 @@
 
 Tracker system I created to allow me to update with achievements and tag with goals
 
+- [Summary of how it works](#summary-of-how-it-works)
 - [Set up](#set-up)
   - [How to customise](#how-to-customise)
   - [How to tag up text](#how-to-tag-up-text)
@@ -12,6 +13,22 @@ Tracker system I created to allow me to update with achievements and tag with go
     - [Adding training](#adding-training)
   - [How to collate the tags](#how-to-collate-the-tags)
   - [Links](#links)
+
+---
+
+## Summary of how it works
+
+Weekly updates and sprint details are added to markdown files and can be tagged with specific goals or categories such as feedback or useful info or training etc.
+
+This information can then be collated by running some yarn/npm scripts to generate a summary of the tags you have added
+
+These scripts mainly run shell scripts that grep through the markdown files looking for matches (using regex), reformatting the text so it will work well in the summary pages, and saving the output into temp files.  Currently these are looking for very specific text matches - but I set up some smaller functions to handle the processing so it should be easy(ish) to update the regex used to look for different text to match.
+
+I then use a cool NPM package [Markdown Magic](https://github.com/DavidWells/markdown-magic) to dynamically load in these temp files into the main markdown index files
+
+This then gets committed and pushed up to github
+
+**Note** This will only work on Mac/unix due to the bash scripts used.
 
 ---
 
