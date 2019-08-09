@@ -8,7 +8,7 @@ cleanFile feedback.md
 cleanFile useful.md
 cleanFile personal.md
 cleanFile training.md
-cleanFile README.md
+cleanFile progress-main.md
 cleanFile goals/goals-progress.md
 cleanFile goals/goals-progress-group.md
 cleanFile goals/goals-progress-group-bcs.md

@@ -20,5 +20,5 @@ const callback = function(updatedContent, outputConfig) {
   console.log('all set!')
 }
 
-const markdownPath = path.join(__dirname, '..', 'README.md')
+const markdownPath = path.join(__dirname, '..', 'progress-main.md')
 markdownMagic(markdownPath, config, callback)
