@@ -20,6 +20,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=./temp/sprint-list.md) -->
 <!-- The below code snippet is automatically added from ./temp/sprint-list.md -->
 
+- [13.2.md](/evidence/sprints/13.2.md#readme)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
@@ -59,6 +60,11 @@
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=./temp/08.md) -->
 <!-- The below code snippet is automatically added from ./temp/08.md -->
 
+<details><summary>August 2019</summary>
+
+- [08-05-2019](/progress/progress-08-05-2019.md#readme)
+
+</details>
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
