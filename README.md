@@ -1,79 +1,31 @@
 # <a name="top"></a>![Progress Tracker](/images/on-page/img-h-_0005_Progress-Tracker.png)
 
-Tracker system I created to allow me to update with achievements and tag with goals
+This is a branch that contains the progress files with some examples already tagged up and the pages with the collated info
+
+To view more details about this project and understand how to use it go to the **[master branch README](https://github.com/ClareJolly/progress-tracker-system/tree/master)**
 
 ---
 
-## Set up
+### Links/files to check out
 
-add a `temp` folder in the root
+[Main index page](/progress-main.md)
 
-`yarn` to get the dependencies
+From there you can look at the example files that I would use to update my progress:
 
----
+- [13.2 sprint](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/evidence/sprints/13.2.md#readme)
+  - [raw markdown](https://raw.githubusercontent.com/ClareJolly/progress-tracker-system/demo-set-up/evidence/sprints/13.2.md)
+- [5th August weekly tracker](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/progress/progress-08-05-2019.md#readme)
+  - [raw markdown](https://raw.githubusercontent.com/ClareJolly/progress-tracker-system/demo-set-up/progress/progress-08-05-2019.md)
 
-### How to customise
+The tags on these files are then collated on:
 
-At the moment this is using vscode snippets to allow me to tag achievements with different goals so you can make updates in the `.vscode/useful-code-snippets` file
-
----
-
-### How to tag up text
-
-I use VS code to help with tagging or you can just add the relevant text.  The scripts that run look for this particular tag text pattern so if you update the pattern, the scripts need updating too
-
----
-
-#### Adding a goal
-
-![adding-goal](images/adding-a-goal.png)
-
-![goal-added](images/goal-added.png)
-
----
-
-#### Tagging some feedback
-
-![add-feedback](images/adding-feedback.png)
-
-![feedback-added](images/feedback-added.png)
-
----
-
-#### Tagging some personal development observations
-
-![personal-added](images/adding-personal.png)
-
-![personal-added](images/personal-added.png)
-
----
-
-#### Adding useful info
-
-![useful-info-added](images/adding-useful.png)
-
-![useful-info](images/useful-added.png)
-
----
-
-#### Adding training
-
-![adding-training](images/adding-training.png)
-
-![added-training](images/training-added.png)
-
----
-
-### How to collate the tags
-
-`yarn updateFiles` will scan through all the files and collate the various info that you have tagged
-
-`yarn build` will update the files but also push to github
-
-The files will appear in the `progress-main.md` file all linked up and the weekly reports will appear in a list in their appropriate month
-
----
-
-### Links
-
-[Link to progress main page](/progress-main.md)
+- [Goals](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/goals/goals-progress-group-bcs.md#readme)
+  - [raw markdown](https://raw.githubusercontent.com/ClareJolly/progress-tracker-system/demo-set-up/goals/goals-progress-group-bcs.md)
+- [Training](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/training.md#readme)
+  - [raw markdown](https://raw.githubusercontent.com/ClareJolly/progress-tracker-system/demo-set-up/training.md)
+- [Feedback](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/feedback.md#readme)
+  - [raw markdown](https://raw.githubusercontent.com/ClareJolly/progress-tracker-system/demo-set-up/feedback.md)
+- [Personal development/observations](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/personal.md#readme)
+  - [raw markdown](https://raw.githubusercontent.com/ClareJolly/progress-tracker-system/demo-set-up/personal.md)
+- [Useful info](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/useful.md#readme)
+  - [raw markdown](https://raw.githubusercontent.com/ClareJolly/progress-tracker-system/demo-set-up/useful.md)
