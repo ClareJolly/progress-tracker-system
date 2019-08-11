@@ -12,7 +12,7 @@ Tracker system I created to allow me to update with achievements and tag with go
     - [Adding useful info](#adding-useful-info)
     - [Adding training](#adding-training)
   - [How to collate the tags](#how-to-collate-the-tags)
-  - [Links](#links)
+  - [Check out some examples](#check-out-some-examples)
 
 ---
 
@@ -23,6 +23,8 @@ Weekly updates and sprint details are added to markdown files and can be tagged 
 This information can then be collated by running some yarn/npm scripts to generate a summary of the tags you have added
 
 These scripts mainly run shell scripts that grep through the markdown files looking for matches (using regex), reformatting the text so it will work well in the summary pages, and saving the output into temp files.  Currently these are looking for very specific text matches - but I set up some smaller functions to handle the processing so it should be easy(ish) to update the regex used to look for different text to match.
+
+There are also scripts that search through certain folders to dynamically create an index of weekly and sprint reports and adds links to these to the main page.  In the case of the weekly reports will add them in the month they refer to.
 
 I then use a cool NPM package [Markdown Magic](https://github.com/DavidWells/markdown-magic) to dynamically load in these temp files into the main markdown index files
 
@@ -177,11 +179,11 @@ On the page
 
 `yarn build` will update the files but also push to github
 
-The files will appear in the `progress-main.md` file all linked up and the weekly reports will appear in a list in their appropriate month
+The files will appear in the `progress-main.md` file all linked up and the weekly reports will appear in a list in their appropriate month and sprints appearing under that section.
 
 ---
 
-### Links
+### Check out some examples
 
 [Link to progress main page](/progress-main.md) - No example data
 
