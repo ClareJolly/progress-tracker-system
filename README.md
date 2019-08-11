@@ -12,7 +12,7 @@ Tracker system I created to allow me to update with achievements and tag with go
     - [Adding useful info](#adding-useful-info)
     - [Adding training](#adding-training)
   - [How to collate the tags](#how-to-collate-the-tags)
-  - [Check out some examples](#check-out-some-examples)
+- [Check out some examples](#check-out-some-examples)
 
 ---
 
@@ -183,7 +183,7 @@ The files will appear in the `progress-main.md` file all linked up and the weekl
 
 ---
 
-### Check out some examples
+## Check out some examples
 
 [Link to progress main page](/progress-main.md) - No example data
 
