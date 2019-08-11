@@ -185,4 +185,6 @@ The files will appear in the `progress-main.md` file all linked up and the weekl
 
 [Link to progress main page](/progress-main.md) - No example data
 
-[Link to branch with example data and compiled files](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/progress-main.md)
+[Link to branch with example data and compiled files](https://github.com/ClareJolly/progress-tracker-system/blob/demo-set-up/progress-main.md#readme)
+
+[Link to demo branch README](https://github.com/ClareJolly/progress-tracker-system/tree/demo-set-up#readme)
