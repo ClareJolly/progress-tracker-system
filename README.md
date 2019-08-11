@@ -62,7 +62,7 @@ To add using vscode - `ctrl` + `space` and start to type the goal or type of tag
 
 The current goal set up is BCS software engineering apprenticeship goals
 
-Goals are collated on the goals page so all the same goals are grouped together.  This is a visualisation of how many examples of a goal you hage
+Goals are collated on the goals page so all the same goals are grouped together.  This is a visualisation of how many examples of a goal you have
 
 - 🌕 - loads of examples
 - 🌔 - lots of examples
