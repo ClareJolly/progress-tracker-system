@@ -81,7 +81,7 @@ select the goal you want to add to the page.
 
 On the page
 
-![page](images/goals-PAGE.png)
+![page](images/goals-PAGE-s.png)
 
 ---
 
@@ -101,7 +101,7 @@ When added
 
 On the page
 
-![page](images/feedback-PAGE.png)
+![page](images/feedback-PAGE-s.png)
 
 ---
 
@@ -121,7 +121,7 @@ When added
 
 On the page
 
-![page](images/personal-PAGE.png)
+![page](images/personal-PAGE-s.png)
 
 ---
 
@@ -141,7 +141,7 @@ When added
 
 On the page
 
-![page](images/useful-PAGE.png)
+![page](images/useful-PAGE-s.png)
 
 ---
 
@@ -169,7 +169,7 @@ When added
 
 On the page
 
-![page](images/training-PAGE.png)
+![page](images/training-PAGE-s.png)
 
 ---
 
