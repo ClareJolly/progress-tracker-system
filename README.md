@@ -6,7 +6,7 @@ To view more details about this project and understand how to use it go to the *
 
 ---
 
-### Links/files to check out
+## Links/files to check out
 
 [Main index page](/progress-main.md)
 
